@@ -4,9 +4,10 @@ public class MyMain {
     
     // Counts the number of 'a', 'b', and 'c' chars in str
     public static int countABC(String str) {
+        String str1 = str.toLowerCase();
         int count = 0;
-        for (int i = 0; i < str.length(); i++){
-            char char1 = str.charAt(i);
+        for (int i = 0; i < str1.length(); i++){
+            char char1 = str1.charAt(i);
             if (char1==('a') || char1==('b') || char1==('c'))
             count++;
         }
