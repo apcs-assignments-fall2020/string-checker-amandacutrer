@@ -26,7 +26,8 @@ public class MyMain {
 
     // Checks whether str is a palindrome or not
     public static boolean isPalindrome(String str) {
-        String str2 = str.replaceAll(" ", "");
+        String str1 = str.toLowerCase();
+        String str2 = str1.replaceAll(" ", "");
         int j = str2.length(); int i = -1;
         while (i < j){
             i++;
